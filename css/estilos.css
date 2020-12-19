@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.bigcontainer{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow-x: hidden;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.listitems{
+    display: inherit;
+    justify-content: space-around;
+}
+.items{
+    list-style:none;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-left: 10px;
+}
+.items a{
+    padding: 10px;
+    color:#ffffff;
+    text-decoration: none;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero__container img{
+    width: 50vw;
+    height: 50vh;
+}
+.hero__container{
+    display: inherit;
+    
+}
+.containerfigure{
+    display: flex;
+    align-items: center;
+}
+.title h1{
+    color: #ffffff;
+    line-height: 10vh;
+    font-size: 2.5em;
+    font-weight: 400;   
+}
+.resumen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.resumen__container{
+    width: 90vw;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+}
+.articles{
+    display: flex;
+    padding:15px;
+    border: 2px solid #fff6d5;
+    border-radius: 25px;
+    margin: 2em;
+    box-shadow:  0 0 0.2em 0.2em #595959;
+    
+}
+.figure{
+    width: 100%;
+    height: 80%;
+
+}
+.figure img{
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+}
+.contact{
+    display: flex;
+    margin-top: 10vh;   
+}
+.contact__container{
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;    
+}
+@media screen and (max-width:430px){
+    .items a{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .items{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .articles{
+        flex-wrap: wrap;
+
+    }
+    .figure{
+        height: 230px;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
